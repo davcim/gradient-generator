@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Générateur de dégradé</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="gradient">
+	<h1>Générateur<br>de dégradé</h1>
+	<input class="color1" type="color" name="color1" value="#02162c">
+	<input class="color2" type="color" name="color2" value="#04476d">
+	<br>
+	<button id="generateRandomColorHex" class="button button-random pop-on-hover">DÉGRADÉ ALÉATOIRE</button>
+	<br>
+	<button id="generateDarkColorHex" class="button button-dark pop-on-hover">DÉGRADÉ FONCÉ ALÉATOIRE</button>
+	<br>
+	
+	<button id="generateLightColorHex" class="button button-light pop-on-hover">DÉGRADÉ PÂLE ALÉATOIRE</button>
+
+	<h2>CSS du dégradé</h2>
+	<i class="fa-solid fa-caret-down"></i>
+	<h3 id="copyCSS"></h3>
+	<!-- <div class="container"> -->
+		<button id="copyToClipboard" class="pop-on-hover cp-btn" onclick="copyToClipboard('copyCSS')">COPIER LE CSS</button>
+	<!-- </div> -->
+	<script type="text/javascript" src="script.js"></script>	
+</body>
+</html>
